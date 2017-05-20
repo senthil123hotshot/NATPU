@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title Edit Profile
+    // custom-theme
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='Natpu,Nanban,TCE')
+    meta(property='og:description', content='Natpu, is App that Connect The People Who are all Studied IT at TCE in 2013-2017.The Idea Behind By Senthil')
+    script(type='application/x-javascript').
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+      function hideURLbar(){ window.scrollTo(0,1); }
+    // //custom-theme
+    link(href='css/style3.css', rel='stylesheet', type='text/css', media='all')
+    link(href='//fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet')
+  body.agileits_w3layouts
+    h1.agile_head.text-center Edit Profile
+    .w3layouts_main.wrap
+      h3 Edit The fields 
+      br
+      form.agile_form(action='/editprofile', method='post', enctype='multipart/form-data')
+        input(type='email', placeholder='Enter Email', name='email', value='#{data.email}', required='')
+        input(type='text', placeholder='Enter Nick Name', name='nick', value='#{data.nick}', required='')
+        input(type='text', placeholder='Enter about me', name='about', value='#{data.about}', required='')
+        input(type='text', placeholder='Enter fb id', name='fb', value='#{data.fb}', required='')
+        input(type='text', placeholder='Enter Crush Name', name='crush', value='#{data.crush}', required='', style='margin-left:2%')
+        input(type='text', placeholder='Enter Phno', name='phone', value='#{data.phone}', required='', style='width:94%')
+        input(type='date', placeholder='Enter DOJ YYYY/MM/DD', name='doj', value='#{data.doj}', required='')
+        input(type='text', placeholder='Enter Blood Group', name='blood', value='#{data.blood}', required='')
+        h2 Choose Photo
+        input(type='file', placeholder='Enter Photos', name='fileToUpload', value='#{data.file}', required='', style='margin-left:1%;color:#fff;width:94%;margin-bottom: 2em')
+        input(type='date', placeholder='Enter the Address', name='address', value='#{data.address}', required='')
+        input.agileinfo(type='submit', value='send')
+    .agileits_copyright.text-center
+      p
+      a(href='/contact', style='color:#fff;') | © 2017 | Design by Natpu & Team

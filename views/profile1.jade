@@ -1,0 +1,102 @@
+doctype html
+html
+  head
+    title Natpu
+    link(href='http://fonts.googleapis.com/css?family=Anaheim', rel='stylesheet', type='text/css')
+    meta(name='keywords', content='TCE,friends,senthil')
+    meta(property='og:description', content='Natpu, is App that Connect The People Who are all Studied IT at TCE in 2013-2017.The Idea Behind By Senthil')
+    link(rel='stylesheet', href='css/reset.css', type='text/css', media='all')
+    link(rel='stylesheet', href='css/style.css', type='text/css', media='all')
+    link(href='css/imagehover.css', rel='stylesheet', media='all')
+    link(type='text/css', rel='stylesheet', href='http://dreamtemplate.com/dreamcodes/buttons_css3/css/tsc_button_styles.css')
+    script(type='text/javascript', src='js/jquery.js')
+    script(type='text/javascript', src='js/jquery.lightbox.js')
+    link(rel='stylesheet', type='text/css', href='css/lightbox.css', media='screen')
+    script(type='text/javascript').
+      $(function() {
+      $('.gallery a').lightBox();
+      });
+    link(href='css/bootstrap.min.css', rel='stylesheet', type='text/css')
+    script(src='js/bootstrap.min.js')
+    script(src='js/jquery.js')
+  style.
+    .button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    }
+    .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    }
+    .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    }
+    .button:hover span {
+    padding-right: 25px;
+    }
+    .button:hover span:after {
+    opacity: 1;
+    right: 0;
+    }
+  body(style='background: url("images/background.jpg");background-size: cover;background-attachment: fixed')
+    .header
+      span
+      style(type='text/css').
+        a{
+        text-decoration: none;
+        }
+        a:hover{
+        text-decoration: none;
+        }
+      .wrap
+        .menu
+          ul
+            li
+              a(href='/home', style='font-size: 20px') Home
+            li
+              a(href='/memories', style='font-size: 20px') Memories
+            li
+              a(href='/birthday', style='font-size: 20px') Birthday
+            li.active
+              a(href='/profile', style='font-size: 20px') Profile
+            li
+              a(href='/slam', style='font-size: 20px') Slam
+            li
+              a(href='/logout', style='font-size: 20px') Logout
+            li.active
+              a(href='/settings', style='font-size: 20px') Settings
+        .logo
+          a(href='index.html')
+            img(src='images/logo2.png', alt='')
+    div
+      h1
+        center
+          font(color='white') Profile Options
+      center
+        lable
+          form
+            input(type='submit', name='AS')
+          a.button(href='/viewprofile')
+            span Search Any Natpu Profile 
+          a.button(href='/addprofile')
+            span Add To Natpu Circle 
+          a.button(href='/editprofile')
+            span Edit Your Profile
+          a.button(href='/readyou')
+            span view Your Profile

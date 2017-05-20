@@ -1,0 +1,85 @@
+doctype html
+html
+  head
+    title நட்பு
+    link(href='http://fonts.googleapis.com/css?family=Anaheim', rel='stylesheet', type='text/css')
+    meta(name='keywords', content='TCE,friends,senthil')
+    meta(property='og:description', content='Natpu, is App that Connect The People Who are all Studied IT at TCE in 2013-2017.The Idea Behind By Senthil')
+    link(rel='stylesheet', href='css/reset.css', type='text/css', media='all')
+    link(rel='stylesheet', href='css/style.css', type='text/css', media='all')
+    link(href='css/imagehover.css', rel='stylesheet', media='all')
+    link(type='text/css', rel='stylesheet', href='http://dreamtemplate.com/dreamcodes/buttons_css3/css/tsc_button_styles.css')
+    script(type='text/javascript', src='js/jquery.js')
+    script(type='text/javascript', src='js/jquery.lightbox.js')
+    link(rel='stylesheet', type='text/css', href='css/lightbox.css', media='screen')
+    script(type='text/javascript').
+      $(function() {
+      $('.gallery a').lightBox();
+      });
+    link(href='css/bootstrap.min.css', rel='stylesheet', type='text/css')
+    script(src='js/bootstrap.min.js')
+    script(src='js/jquery.js')
+  body(style='background: url("images/background.jpg");background-size: cover;background-attachment: fixed')
+    .header
+      span
+      style(type='text/css').
+        a{
+        text-decoration: none;
+        }
+        a:hover{
+        text-decoration: none;
+        }
+      .wrap
+        .menu
+          ul
+            li
+              a(href='/home', style='font-size: 20px') Home
+            li.active
+              a(href='/memories', style='font-size: 20px') Memories
+            li
+              a(href='/birthday', style='font-size: 20px') Birthday
+            li
+              a(href='/profile', style='font-size: 20px') Profile
+            li
+              a(href='/slam', style='font-size: 20px') Slam
+            li
+              a(href='/logout', style='font-size: 20px') Logout
+            li
+              a(href='/settings', style='font-size: 20px') Settings
+        .logo
+          a(href='index.html')
+            img(src='images/logo.png', alt='')
+    style.
+      #txt{
+      width: 70%;
+      background: rgba(0,0,0,0.5);
+      height: 40px;
+      border: 1px solid #888888;
+      color:#fff;
+      padding-left: 1em;
+      display: inline;
+      margin-top: 0.5em;
+      }
+      #btn{
+      padding:1em;
+      box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+      background: rgba(230,230,230,0.5);
+      color:#fff;
+      display: inline;
+      border-radius:12em;
+      margin-top: 0.5em
+      }
+      #btn:hover{
+      background: #990888;
+      }
+    #simple-slider
+      // A class of "sliderImage" will include the attached image to the slider list
+    each d in data
+      //a(href='', style='font-size: 20px') #{d.name}
+      img.sliderImage(src='images/#{d.file}')
+    // An ID of "simple-slider" will style the container that holds the slider images
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='js/scripts.js')
+  a(href='/memoriesadd', style='color:#fff;') add some memories
+  .col-md-12(style='background: rgba(0,0,0,0.5);text-align: center;padding: 1em')
+    a(href='/contact', style='color:#fff;') © 2017 | Design by Natpu & team

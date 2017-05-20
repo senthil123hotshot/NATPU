@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title Add Friends
+    // custom-theme
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='Natpu,Nanban,TCE')
+    script(type='application/x-javascript').
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+      function hideURLbar(){ window.scrollTo(0,1); }
+    // //custom-theme
+    link(href='css/style3.css', rel='stylesheet', type='text/css', media='all')
+    link(href='//fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet')
+  body.agileits_w3layouts
+    h1.agile_head.text-center ADD Friends
+    .w3layouts_main.wrap
+      h3 Please fill all details 
+      br
+      form.agile_form(action='/addprofile', method='post' enctype="multipart/form-data")
+        input(type='email', placeholder='Enter Email', name='email', required='')
+        input(type='text', placeholder='Enter Nick Name', name='nick', required='')
+        input(type='text', placeholder='Enter about me', name='about', required='')
+        input(type='text', placeholder='Enter fb id', name='fb', required='')
+        input(type='text', placeholder='Enter Crush Name', name='crush', required='', style='margin-left:2%')
+        input(type='text', placeholder='Enter Phno', name='phone', required='', style='width:94%')
+        input(type='date', placeholder='Enter DOJ YYYY/MM/DD', name='doj', required='')
+        input(type='text', placeholder='Enter Blood Group', name='blood',
+        required='')
+        h2 Choose Photo
+        input(type='file', placeholder='Enter Photos', name='fileToUpload', required='', style='margin-left:1%;color:#fff;width:94%;margin-bottom: 2em')
+        input(type='date', placeholder='Enter the Address', name='address', required='')
+        input.agileinfo(type='submit', value='send')
+    .agileits_copyright.text-center
+      p
+        | © 2017 | Design by Natpu & Team
